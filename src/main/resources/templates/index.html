@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2> HELLO SPRING BOOT WITH JPA </h2>
+
+<button onclick="saveReq()">글작성</button>
+
+<button onclick="listReq()">글목록</button>
+</body>
+
+<script>
+    const saveReq = ()=>{
+        location.href="/board/save"; // index가 떴을 때 여기로 간다. (이 링크로)
+    }
+
+    const listReq = ()=>{
+        location.href="/board/"; // index가 떴을 때 여기로 간다. (이 링크로)
+    }
+</script>
+</html>
