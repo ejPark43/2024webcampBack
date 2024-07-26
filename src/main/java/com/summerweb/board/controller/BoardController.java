@@ -102,6 +102,7 @@ public class BoardController {
 
     // 전체 게시글 조회 (GET)
     @GetMapping("/")
+    @CrossOrigin(origins="https://bungae-clone-coding.netlify.app/")
     public List<BoardDTO> findAll() {
         return boardService.findAll();
     }
